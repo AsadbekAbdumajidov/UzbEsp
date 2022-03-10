@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "390338172286",
+    "project_id": "uzesp-1947c",
+    "storage_bucket": "uzesp-1947c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390338172286:android:d9a70f91e77ebc7ad40f2f",
+        "android_client_info": {
+          "package_name": "com.example.uzesp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390338172286-q1hff7ib1v8at37hbacgg6riuq6ed7pj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uzesp",
+            "certificate_hash": "a3e0c84234474ecbe0565fb96733113b35b36698"
+          }
+        },
+        {
+          "client_id": "390338172286-1cuiso4hv0u656lm7tq8mt49rne00lmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBttaJggKPf3LEe-SweykDMJF7jFGS9AQE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390338172286-1cuiso4hv0u656lm7tq8mt49rne00lmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

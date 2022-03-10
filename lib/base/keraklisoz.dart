@@ -1,0 +1,22 @@
+List kerakli = [
+  {"uz": "attashe-keys", "esp": "portafolio"},
+  {"uz": "chipta", "esp": "billete"},
+  {"uz": "-bumajnik", "esp": "cartera"},
+  {"uz": "videokamera", "esp": "cámara de cine"},
+  {"uz": "pul", "esp": "dinero"},
+  {"uz": "xujjatlar", "esp": "documentos"},
+  {"uz": "kitob", "esp": "libro"},
+  {"uz": "quti", "esp": "caja"},
+  {"uz": "noutbuk", "esp": "ordenador portátil"},
+  {"uz": "ko'z oynak", "esp": "gafas"},
+  {"uz": "palto", "esp": "abrigo"},
+  {"uz": "pasport", "esp": "pasaporte"},
+  {"uz": "qo'lqoplar", "esp": "guantes"},
+  {"uz": "plash", "esp": "gabardina"},
+  {"uz": "portfel", "esp": "portafolio"},
+  {"uz": "ruchka", "esp": "boligrafo"},
+  {"uz": "sumka", "esp": "bolso"},
+  {"uz": "fotokamera", "esp": "cámara de fotos"},
+  {"uz": "soat", "esp": "reloj"},
+  {"uz": "chemodan", "esp": "maleta"}
+];
