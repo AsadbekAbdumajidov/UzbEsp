@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:uzesp/base/bolim.dart';
 import 'package:uzesp/core/constants/const_color.dart';
+import 'package:uzesp/core/widgets/home_app_bar/home_app_bar.dart';
 import 'package:uzesp/screen/search/search.dart';
 
 import '../../core/components/drawer.dart';
@@ -20,23 +21,12 @@ class _MyHomePageState extends State<MyHomePage> {
     SizeConfig().init(context);
     return Scaffold(
       drawer: const DrawerComp(),
-      appBar: AppBar(
-        backgroundColor: ConstColor.siyohColor,
-        title: const Text(
-          "So'zlashgich",
-          style: TextStyle(fontFamily: "book"),
-        ),
-        centerTitle: true,
-        actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.share)),
-          IconButton(
-              onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => SerarchPage()));
-              },
-              icon: const Icon(Icons.search))
-        ],
-      ),
+      appBar: HomeAppBar(
+        title: "Saralanganlar",
+        leftIcon: const Icon(Icons.arrow_back),
+        rightIcon: const Icon(Icons.arrow_back),
+        righ2tIcon: const Icon(Icons.search),
+      ).getBar(context),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: he(10)),
         physics: const BouncingScrollPhysics(),
