@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:uzesp/base/bolim.dart';
+import 'package:uzesp/core/components/drawer.dart';
 import 'package:uzesp/core/constants/const_color.dart';
+import 'package:uzesp/core/constants/padding/padding_comp.dart';
 import 'package:uzesp/core/widgets/home_app_bar/home_app_bar.dart';
-import 'package:uzesp/screen/search/search.dart';
-
-import '../../core/components/drawer.dart';
 import '../../core/components/size_konfig.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -19,18 +17,21 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
+    final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
     return Scaffold(
       drawer: const DrawerComp(),
+      key: _scaffoldKey,
       appBar: HomeAppBar(
-        title: "Saralanganlar",
-        leftIcon: const Icon(Icons.arrow_back),
-        rightIcon: const Icon(Icons.arrow_back),
-        righ2tIcon: const Icon(Icons.search),
-      ).getBar(context),
+              title: "Ispancha so'zlashuv",
+              leftIcon: Icon(Icons.menu, color: ConstColor.whiteColor),
+              rightIcon: Icon(Icons.share, color: ConstColor.whiteColor),
+              righ2tIcon: Icon(Icons.search, color: ConstColor.whiteColor),
+              leftOntap: () => _scaffoldKey.currentState!.openDrawer())
+          .getBar(context),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: he(10)),
         physics: const BouncingScrollPhysics(),
-        itemBuilder: ((context, index) {
+        itemBuilder: ((_, __) {
           return Container(
             margin: EdgeInsets.symmetric(horizontal: wi(20), vertical: he(15)),
             height: he(80),
@@ -46,6 +47,30 @@ class _MyHomePageState extends State<MyHomePage> {
               ],
               color: ConstColor.whiteColor,
               borderRadius: BorderRadius.circular(15),
+            ),
+            child: MyPadddings.pdSymetric(
+              horizontal: wi(11),
+              child: Row(
+                children: [
+                  Container(
+                    height: he(54),
+                    width: he(54),
+                    decoration: BoxDecoration(
+                      borderRadius: const BorderRadius.all(Radius.circular(5)),
+                      color: ConstColor.siyohColor.withOpacity(0.3),
+                        image: DecorationImage(image: AssetImage(bolimlar[__]["img"]),)
+                      ),
+                    ),
+                  
+                  MyPadddings.pdOnly(
+                    left: wi(20),
+                      child: Text(
+                    bolimlar[__]["name"],
+                    style: TextStyle(
+                        fontSize: he(20), fontWeight: FontWeight.bold),
+                  ))
+                ],
+              ),
             ),
           );
         }),

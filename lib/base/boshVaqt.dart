@@ -65,7 +65,7 @@ List boshVaqt = [
     "esp": "¿Dónde está el casíno más próximo?"
   },
   {
-    "esp": "Men jonim bilan vaqtimni o'yin avtomatlari yonida o'tkazaman",
+    "uz": "Men jonim bilan vaqtimni o'yin avtomatlari yonida o'tkazaman",
     "esp": "Con mucho gusto paso el tiempo ante las máquinas de juego"
   },
   {

@@ -1,9 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:uzesp/base/muloqot.dart';
 
 class SerarchPage extends StatefulWidget {
-  SerarchPage({Key? key}) : super(key: key);
+ const SerarchPage({Key? key}) : super(key: key);
 
   @override
   State<SerarchPage> createState() => _SerarchPageState();
@@ -25,7 +24,7 @@ class _SerarchPageState extends State<SerarchPage> {
           // itemColor: Colors.white,
           backgroundColor: Colors.white.withOpacity(0.5),
           onChanged: (qidir) {
-            print(qidir);
+            debugPrint(qidir);
             setState(() {});
           },
         ),

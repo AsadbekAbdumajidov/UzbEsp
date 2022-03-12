@@ -43,12 +43,12 @@ List fotoplyonka = [
     "esp": "¿Cuál es el precio de un marco?"
   },
   {
-    "esp": "Menga devorga va stolga qo'yiladigan ramkalar kerak",
+    "uz": "Menga devorga va stolga qo'yiladigan ramkalar kerak",
     "esp": "Necesito, marcos de pared y de mesa"
   },
   {"uz": "Mana bularni olaman", "esp": "Yo me quedo con éstos"},
   {
-    "esp":
+    "uz":
         "Sizdan 200 ta rasm sig'adigan albom va plenkalar uchun quti olmoqchiman ",
     "esp": "negativos "
   },

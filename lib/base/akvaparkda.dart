@@ -2,7 +2,7 @@ List akvapark = [
   {"uz": "Suzish havzasi qayerda?", "esp": "¿Dónde está la piscina?"},
   {"uz": "YOpiq suzish havzasimi?", "esp": "¿Es una piscina cubierta?"},
   {
-    "esp": "Yozda menga ochiq havodagi suzish havzasida cho'milish yoqadi",
+    "uz": "Yozda menga ochiq havodagi suzish havzasida cho'milish yoqadi",
     "esp": "En verano me gusta nadar en la piscina al aire libre"
   },
   {"uz": "...kirish qancha turadi?", "esp": "¿Cuánto vale la entrada...?"},
@@ -15,7 +15,7 @@ List akvapark = [
     "esp": "¿Dónde está la entrada al guardarropa?"
   },
   {
-    "esp": "Shkafni qulfi uchun kafolat sifatida qancha qoldirishim kerak?",
+    "uz": "Shkafni qulfi uchun kafolat sifatida qancha qoldirishim kerak?",
     "esp":
         "¿Qué moneda tengo que echar en la cerradura del armario en calidad de garantía?"
   },
@@ -25,15 +25,15 @@ List akvapark = [
     "esp": "¿Dónde está la puerta del cuarto de duchas?"
   },
   {
-    "esp": "Yuvinish xonasidan keyin saunaga kirmoqchiman?",
+    "uz": "Yuvinish xonasidan keyin saunaga kirmoqchiman?",
     "esp": "Después de ducharme quiero tomar una sauna "
   },
   {
-    "esp": "Ijaraga shezlong olib quyoshda toblanmoqchiman ",
+    "uz": "Ijaraga shezlong olib quyoshda toblanmoqchiman ",
     "esp": "Quiero alquilar una silla de lona y tomar el sol "
   },
   {
-    "esp": "Suzishdan charchadim, barga muzqaymoq eyishga boramiz",
+    "uz": "Suzishdan charchadim, barga muzqaymoq eyishga boramiz",
     "esp": "Estoy harto de nadar, vamos al bar a comer un helado"
   },
   {

@@ -14,7 +14,7 @@ List soatTuzatih = [
   {"uz": "Iltimos, almashtirib bering", "esp": "Cambíamela, por favor "},
   {"uz": "Kimyoviy tozalash joyida", "esp": "En la tintorería"},
   {
-    "esp": "Yaqin joydagi kimyoviy tozalash joyi qayerda?",
+    "uz": "Yaqin joydagi kimyoviy tozalash joyi qayerda?",
     "esp": "¿Dónde hay por aquí una tintorería?"
   },
   {"uz": "Bu kostyumni tozalatmoqchiman", "esp": "Necesito limpiar este traje"},

@@ -7,7 +7,7 @@ class SettingsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: Colors.red,
-      child: Center(child: Text("Settings")),
+      child:const Center(child: Text("Settings")),
     );
   }
 }

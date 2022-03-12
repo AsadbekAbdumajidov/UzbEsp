@@ -25,7 +25,7 @@ class HomeAppBar {
       elevation: 1,
       centerTitle: true,
       automaticallyImplyLeading: false,
-      backgroundColor: Colors.white,
+      backgroundColor: ConstColor.siyohColor,
       title: Text(title,
           style: TextStyle(fontFamily: "Book", color: ConstColor.whiteColor)),
       leading: IconButton(
