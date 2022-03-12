@@ -60,55 +60,6 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/png/1.png
-    - assets/png/2.png
-    - assets/png/3.png
-    - assets/png/4.png
-    - assets/png/5.png
-    - assets/png/6.png
-    - assets/png/7.png
-    - assets/png/8.png
-    - assets/png/9.png
-    - assets/png/10.png
-    - assets/png/11.png
-    - assets/png/12.png
-    - assets/png/13.png
-    - assets/png/14.png
-    - assets/png/15.png
-    - assets/png/16.png
-    - assets/png/17.png
-    - assets/png/18.png
-    - assets/png/19.png
-    - assets/png/20.png
-    - assets/png/21.png
-    - assets/png/22.png
-    - assets/png/23.png
-    - assets/png/24.png
-    - assets/png/25.png
-    - assets/png/26.png
-    - assets/png/27.png
-    - assets/png/28.png
-    - assets/png/29.png
-    - assets/png/30.png
-    - assets/png/31.png
-    - assets/png/32.png
-    - assets/png/33.png
-    - assets/png/34.png
-    - assets/png/35.png
-    - assets/png/36.png
-    - assets/png/37.png
-    - assets/png/38.png
-    - assets/png/39.png
-    - assets/png/40.png
-    - assets/png/41.png
-    - assets/png/42.png
-    - assets/png/43.png
-    - assets/png/44.png
-    - assets/png/45.png
-    - assets/png/46.png
-    - assets/png/47.png
-    - assets/png/48.png
-    - assets/png/49.png
-    - assets/png/50.png
   #   - imagses/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
