@@ -1,7 +1,4 @@
-import 'dart:ffi';
-
 import 'package:animate_do/animate_do.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:uzesp/base/ispaniya_tarixi_data.dart';
 import 'package:uzesp/core/components/courusel_slider.dart';

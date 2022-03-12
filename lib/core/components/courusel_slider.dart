@@ -1,8 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:uzesp/base/ispaniya_tarixi_data.dart';
 import 'package:uzesp/core/components/size_konfig.dart';
-
-import '../../base/ispaniya_tarixi_data.dart';
 
 class CaruselSliderComp extends StatelessWidget {
   const CaruselSliderComp({Key? key}) : super(key: key);
