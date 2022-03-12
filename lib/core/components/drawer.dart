@@ -54,7 +54,9 @@ class DrawerComp extends StatelessWidget {
                     color: ConstColor.whiteColor,
                     elevation: 10,
                     child: ListTile(
-                      onTap: () {},
+                      onTap: () {
+                        Navigator.pushNamed(context, "/fav");
+                      },
                       leading: Icon(Icons.favorite_border,
                           color: ConstColor.blackColor, size: 27),
                       title: Text(

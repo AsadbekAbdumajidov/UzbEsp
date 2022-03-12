@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uzesp/screens/saqlanganlar/saqlanganlar.dart';
 import 'package:uzesp/screens/search/search.dart';
 
 import '../screens/home/homepage.dart';
@@ -29,9 +30,14 @@ class RouteGenerate {
       case '/home':
         return MaterialPageRoute(
           builder: (context) => const MyHomePage(),
-        );case '/search':
+        );
+      case '/search':
         return MaterialPageRoute(
           builder: (context) => const SearchPage(),
+        );
+         case '/fav':
+        return MaterialPageRoute(
+          builder: (context) => const SaqlanganlarPage(),
         );
     }
     return null;
