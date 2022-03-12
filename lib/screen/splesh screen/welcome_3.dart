@@ -45,14 +45,14 @@ class WelcomePage3 extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    "assets/img/w2.png",
+                    "assets/img/w3.png",
                     height: he(220),
                   ),
                   MyPadddings.pdOnly(
                     top: he(40),
                     bottom: he(14),
                     child: Text(
-                      "Ispan tilida muloqot qilishda zarur\n       bo'lgan so'zlar va iboralar",
+                      "Turizmda ko'p ishlatiladigan \n                  gaplar",
                       style: TextStyle(
                           color: ConstColor.blackColor,
                           fontWeight: FontWeight.bold,
@@ -60,7 +60,7 @@ class WelcomePage3 extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Ushbu sozlashgich turli xil mavzularni o'z ichiga olib \n          respublikamizdagi turizmni rivojlantirish \n                            uchun qo'llaniladi",
+                    "O'zbekiston fuqarolariga ispan tilida boshlang'ich\n   malumotlarga ega bolishda muhim o'rin tutadi",
                     style: TextStyle(
                         color: ConstColor.blackColor.withOpacity(0.6)),
                   ),
