@@ -1,7 +1,6 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:uzesp/base/bolim.dart';
-import 'package:uzesp/core/components/drawer.dart';
 import 'package:uzesp/core/constants/const_color.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
 import 'package:uzesp/core/widgets/home_app_bar/home_app_bar.dart';
