@@ -34,6 +34,7 @@ class WelcomePage1 extends StatelessWidget {
           children: [
             MyPadddings.pdSymetric(
               vertical: he(20),
+              horizontal: wi(15),
               child: Column(
                 children: [
                   Image.asset(

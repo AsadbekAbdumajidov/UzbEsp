@@ -41,6 +41,7 @@ class WelcomePage2 extends StatelessWidget {
           children: [
             MyPadddings.pdSymetric(
               vertical: he(20),
+              horizontal: wi(15),
               child: Column(
                 children: [
                   Image.asset(
@@ -51,7 +52,7 @@ class WelcomePage2 extends StatelessWidget {
                     top: he(40),
                     bottom: he(14),
                     child: Text(
-                      "Uzbekcha va Ispancha \n        so'zlashgich",
+                      "Ispan tilida muloqot qilishda zarur\n       bo'lgan so'zlar va iboralar",
                       style: TextStyle(
                           color: ConstColor.blackColor,
                           fontWeight: FontWeight.bold,
@@ -59,14 +60,14 @@ class WelcomePage2 extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    "Ispan tilida ko'p ishlatiladigan gaplar va gapirganda\n              qiynalmaslik uchun dastur",
+                    "Ushbu sozlashgich turli xil mavzularni o'z ichiga olib \n          respublikamizdagi turizmni rivojlantirish \n                            uchun qo'llaniladi",
                     style: TextStyle(
                         color: ConstColor.blackColor.withOpacity(0.6)),
                   ),
                   Column(
                     children: [
                       MyPadddings.pdOnly(
-                        top: he(60),
+                        top: he(50),
                         bottom: he(20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
