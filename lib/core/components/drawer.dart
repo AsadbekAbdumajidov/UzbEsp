@@ -84,7 +84,7 @@ class DrawerComp extends StatelessWidget {
                     color: ConstColor.whiteColor,
                     elevation: 10,
                     child: ListTile(
-                      onTap: () {},
+                      onTap: () {Navigator.pushNamed(context, "/about");},
                       leading: Icon(Icons.warning_amber_outlined,
                           color: ConstColor.blackColor, size: 27),
                       title: Text(
