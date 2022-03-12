@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uzesp/screens/ispaniya_tarixi/ispaniya_tarixi.dart';
 import 'package:uzesp/screens/saqlanganlar/saqlanganlar.dart';
 import 'package:uzesp/screens/search/search.dart';
 
@@ -35,9 +36,13 @@ class RouteGenerate {
         return MaterialPageRoute(
           builder: (context) => const SearchPage(),
         );
-         case '/fav':
+      case '/fav':
         return MaterialPageRoute(
           builder: (context) => const SaqlanganlarPage(),
+        );
+      case '/tarix':
+        return MaterialPageRoute(
+          builder: (context) => const IspaniyaTarixiPage(),
         );
     }
     return null;
