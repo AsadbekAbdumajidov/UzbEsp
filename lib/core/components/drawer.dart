@@ -50,7 +50,6 @@ class DrawerComp extends StatelessWidget {
                       child: Image.asset("assets/img/splesh_foto.png"),
                     ),
                   ),
-                  
                   Card(
                     color: ConstColor.whiteColor,
                     elevation: 10,
@@ -64,7 +63,8 @@ class DrawerComp extends StatelessWidget {
                             color: ConstColor.blackColor, fontSize: 16),
                       ),
                     ),
-                  ),Card(
+                  ),
+                  Card(
                     color: ConstColor.whiteColor,
                     elevation: 10,
                     child: ListTile(
