@@ -30,7 +30,7 @@ class IspaniyaTarixiPage extends StatelessWidget {
           SizedBox(
             height: he(440),
             child: ListView.builder(
-              itemCount: DataIspaniyaTarixi.historyName.length,
+                itemCount: DataIspaniyaTarixi.historyName.length,
                 physics: const BouncingScrollPhysics(),
                 itemBuilder: (_, __) {
                   return MyPadddings.pdSymetric(
@@ -82,38 +82,37 @@ class IspaniyaTarixiPage extends StatelessWidget {
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 10, vertical: 5),
                                         child: Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.center,
-                                            children: [
-                                              Text(
-                                                DataIspaniyaTarixi
-                                                    .historyName[__],
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Text(
+                                              DataIspaniyaTarixi
+                                                  .historyName[__],
+                                              style: const TextStyle(
+                                                  color: Colors.black,
+                                                  fontWeight: FontWeight.bold,
+                                                  fontFamily: 'balo'),
+                                            ),
+                                            const Divider(
+                                              color: Colors.black,
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                  top: 10),
+                                              child: Text(
+                                                DataIspaniyaTarixi.history[__],
                                                 style: const TextStyle(
                                                     color: Colors.black,
                                                     fontWeight: FontWeight.bold,
                                                     fontFamily: 'balo'),
                                               ),
-                                              const Divider(
-                                                color: Colors.black,
-                                              ),
-                                               Padding(
-                                                padding:
-                                                   const EdgeInsets.only(top: 10),
-                                                child: Text(
-                                                  DataIspaniyaTarixi.history[__],
-                                                  style:const TextStyle(
-                                                      color: Colors.black,
-                                                      fontWeight:
-                                                          FontWeight.bold,
-                                                      fontFamily: 'balo'),
-                                                ),
-                                              ),
-                                            ],
-                                          ),
+                                            ),
+                                          ],
                                         ),
                                       ),
                                     ),
                                   ),
+                                ),
                               ],
                             ),
                           ),
