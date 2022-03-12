@@ -31,7 +31,7 @@ class RouteGenerate {
           builder: (context) => const MyHomePage(),
         );case '/search':
         return MaterialPageRoute(
-          builder: (context) => const SerarchPage(),
+          builder: (context) => const SearchPage(),
         );
     }
     return null;

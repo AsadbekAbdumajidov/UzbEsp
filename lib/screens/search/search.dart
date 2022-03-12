@@ -1,47 +1,36 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:uzesp/base/bolim.dart';
+import 'package:uzesp/core/constants/const_color.dart';
 
-class SerarchPage extends StatefulWidget {
- const SerarchPage({Key? key}) : super(key: key);
+import '../../provider/search_provider.dart';
+
+class SearchPage extends StatefulWidget {
+  const SearchPage({Key? key}) : super(key: key);
 
   @override
-  State<SerarchPage> createState() => _SerarchPageState();
+  State<SearchPage> createState() => _SearchPageState();
 }
 
-class _SerarchPageState extends State<SerarchPage> {
-  String? qidir;
-
-  String? qidir2;
-
+class _SearchPageState extends State<SearchPage> {
+  TextEditingController bolim = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    var order = context.watch<SearchProvider>().order.toList();
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 105, 0, 241),
+        backgroundColor: ConstColor.siyohColor,
         leading: const Text(""),
         leadingWidth: 0,
         title: CupertinoSearchTextField(
-          // itemColor: Colors.white,
-          backgroundColor: Colors.white.withOpacity(0.5),
-          onChanged: (qidir) {
-            debugPrint(qidir);
-            setState(() {});
+          itemColor: Colors.white,
+          controller: bolim,
+          backgroundColor: Colors.white.withOpacity(0.1),
+          onChanged: (v) {
+            context.read<SearchProvider>().chiqar(v, bolimlar);
           },
         ),
-      ),
-      body: Container(
-        color: const Color.fromARGB(255, 105, 0, 241).withOpacity(0.5),
-        height: MediaQuery.of(context).size.height,
-        child: ListView.builder(itemBuilder: ((context, index) {
-          // xayrlashish[index]["uz"] == qidir
-          //     ? qidir2 = xayrlashish[index]["uz"]
-          //     : Text("data");
-          return ListTile(
-            tileColor: Colors.white,
-            hoverColor: Colors.white,
-            title: Text("$qidir2"),
-          );
-        })),
       ),
     );
   }

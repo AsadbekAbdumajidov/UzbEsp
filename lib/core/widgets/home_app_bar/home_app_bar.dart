@@ -42,7 +42,7 @@ class HomeAppBar {
         IconButton(
           splashRadius: 20,
           icon: righ2tIcon,
-          onPressed: rightOntap,
+          onPressed: right2Ontap,
         ),
       ],
     );
