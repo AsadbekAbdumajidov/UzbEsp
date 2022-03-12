@@ -40,6 +40,7 @@ class IspaniyaTarixiPage extends StatelessWidget {
                       children: [
                         SlideInLeft(
                           child: Card(
+                            elevation: 5,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10),
                                 side: BorderSide.none),
@@ -80,10 +81,7 @@ class IspaniyaTarixiPage extends StatelessWidget {
                                       child: Padding(
                                         padding: const EdgeInsets.symmetric(
                                             horizontal: 10, vertical: 5),
-                                        child: Padding(
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 6, vertical: 4),
-                                          child: Column(
+                                        child: Column(
                                             crossAxisAlignment:
                                                 CrossAxisAlignment.center,
                                             children: [
@@ -116,7 +114,6 @@ class IspaniyaTarixiPage extends StatelessWidget {
                                       ),
                                     ),
                                   ),
-                                ),
                               ],
                             ),
                           ),
