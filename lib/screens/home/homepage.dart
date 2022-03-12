@@ -23,19 +23,21 @@ class _MyHomePageState extends State<MyHomePage> {
       drawer: const DrawerComp(),
       key: _scaffoldKey,
       appBar: HomeAppBar(
-              title: "Ispancha so'zlashuv",
-              leftIcon: Icon(Icons.menu, color: ConstColor.whiteColor),
-              rightIcon: Icon(Icons.share, color: ConstColor.whiteColor),
-              righ2tIcon: Icon(Icons.search, color: ConstColor.whiteColor),
-              leftOntap: () => _scaffoldKey.currentState!.openDrawer())
-          .getBar(context),
+        title: "Ispancha so'zlashuv",
+        leftIcon: Icon(Icons.menu, color: ConstColor.whiteColor),
+        rightIcon: Icon(Icons.share, color: ConstColor.whiteColor),
+        righ2tIcon: Icon(Icons.search, color: ConstColor.whiteColor),
+        leftOntap: () => _scaffoldKey.currentState!.openDrawer(),
+        right2Ontap: () => Navigator.pushNamed(context, "/search"),
+      ).getBar(context),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: he(10)),
         physics: const BouncingScrollPhysics(),
         itemBuilder: ((_, __) {
           return FadeInUp(
             child: Container(
-              margin: EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
+              margin:
+                  EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
               height: he(75),
               width: wi(343),
               decoration: BoxDecoration(
@@ -58,20 +60,22 @@ class _MyHomePageState extends State<MyHomePage> {
                       height: he(54),
                       width: he(54),
                       decoration: BoxDecoration(
-                        borderRadius: const BorderRadius.all(Radius.circular(5)),
-                        color: ConstColor.siyohColor.withOpacity(0.3),
-                          image: DecorationImage(image: AssetImage(bolimlar[__]["img"]),)
-                        ),
-                      ),
-                    
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(5)),
+                          color: ConstColor.siyohColor.withOpacity(0.3),
+                          image: DecorationImage(
+                            image: AssetImage(bolimlar[__]["img"]),
+                          )),
+                    ),
                     MyPadddings.pdOnly(
-                      left: wi(20),
+                        left: wi(20),
                         child: Text(
-                      bolimlar[__]["name"],
-                      style: TextStyle(
-                        fontFamily: "balo",
-                          fontSize: he(20), fontWeight: FontWeight.bold),
-                    ))
+                          bolimlar[__]["name"],
+                          style: TextStyle(
+                              fontFamily: "balo",
+                              fontSize: he(20),
+                              fontWeight: FontWeight.bold),
+                        ))
                   ],
                 ),
               ),

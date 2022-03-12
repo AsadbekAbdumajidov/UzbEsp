@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:uzesp/screen/home/homepage.dart';
-import 'package:uzesp/screen/splesh%20screen/splesh_page.dart';
-import 'package:uzesp/screen/splesh%20screen/welcome_1.dart';
-import 'package:uzesp/screen/splesh%20screen/welcome_2.dart';
-import 'package:uzesp/screen/splesh%20screen/welcome_3.dart';
+import 'package:uzesp/screens/search/search.dart';
+
+import '../screens/home/homepage.dart';
+import '../screens/splesh screen/splesh_page.dart';
+import '../screens/splesh screen/welcome_1.dart';
+import '../screens/splesh screen/welcome_2.dart';
+import '../screens/splesh screen/welcome_3.dart';
 
 class RouteGenerate {
   Route? generate(RouteSettings settings) {
@@ -16,16 +18,20 @@ class RouteGenerate {
         return MaterialPageRoute(
           builder: (context) => const WelcomePage1(),
         );
-        case '/w2':
+      case '/w2':
         return MaterialPageRoute(
           builder: (context) => const WelcomePage2(),
-        ); case '/w3':
+        );
+      case '/w3':
         return MaterialPageRoute(
           builder: (context) => const WelcomePage3(),
         );
       case '/home':
         return MaterialPageRoute(
           builder: (context) => const MyHomePage(),
+        );case '/search':
+        return MaterialPageRoute(
+          builder: (context) => const SerarchPage(),
         );
     }
     return null;
