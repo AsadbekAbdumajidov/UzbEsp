@@ -2,8 +2,6 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:uzesp/core/components/size_konfig.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
-import 'package:uzesp/core/widgets/cicle_avatar/circle_avatar.dart';
-
 import '../../core/constants/const_color.dart';
 
 class WelcomePage1 extends StatelessWidget {
