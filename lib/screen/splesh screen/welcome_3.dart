@@ -5,8 +5,8 @@ import 'package:uzesp/core/constants/padding/padding_comp.dart';
 
 import '../../core/constants/const_color.dart';
 
-class WelcomePage2 extends StatelessWidget {
-  const WelcomePage2({Key? key}) : super(key: key);
+class WelcomePage3 extends StatelessWidget {
+  const WelcomePage3({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class WelcomePage2 extends StatelessWidget {
           elevation: 0,
           leading: IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, "/w1");
+                Navigator.pushNamed(context, "/w2");
               },
               icon: Icon(
                 Icons.arrow_back,
@@ -74,11 +74,11 @@ class WelcomePage2 extends StatelessWidget {
                           children: [
                             Icon(Icons.fiber_manual_record_outlined,
                                 color: ConstColor.siyohColor),
-                            FadeInUp(
+                            
+                            Icon(Icons.fiber_manual_record_outlined,
+                                color: ConstColor.siyohColor),FadeInUp(
                                 child: Icon(Icons.fiber_manual_record,
                                     color: ConstColor.siyohColor)),
-                            Icon(Icons.fiber_manual_record_outlined,
-                                color: ConstColor.siyohColor)
                           ],
                         ),
                       ),
@@ -87,7 +87,7 @@ class WelcomePage2 extends StatelessWidget {
                         backgroundColor: ConstColor.siyohColor,
                         child: Center(
                           child: IconButton(
-                            onPressed: () {Navigator.pushNamed(context, "/w3");},
+                            onPressed: () {Navigator.pushNamed(context, "/home");},
                             icon: Icon(
                               Icons.arrow_forward_ios_outlined,
                               color: ConstColor.whiteColor,
