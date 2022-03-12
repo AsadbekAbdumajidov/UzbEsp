@@ -2,12 +2,11 @@ import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:uzesp/core/components/size_konfig.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
-import 'package:uzesp/core/widgets/cicle_avatar/circle_avatar.dart';
 
 import '../../core/constants/const_color.dart';
 
-class WelcomePage1 extends StatelessWidget {
-  const WelcomePage1({Key? key}) : super(key: key);
+class WelcomePage2 extends StatelessWidget {
+  const WelcomePage2({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +15,14 @@ class WelcomePage1 extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           elevation: 0,
+          leading: IconButton(
+              onPressed: () {
+                Navigator.pushNamed(context, "/w1");
+              },
+              icon: Icon(
+                Icons.arrow_back,
+                color: ConstColor.blackColor,
+              )),
           actions: [
             TextButton(
               onPressed: () {
@@ -37,7 +44,7 @@ class WelcomePage1 extends StatelessWidget {
               child: Column(
                 children: [
                   Image.asset(
-                    "assets/img/w1.png",
+                    "assets/img/w2.png",
                     height: he(220),
                   ),
                   MyPadddings.pdOnly(
@@ -64,11 +71,11 @@ class WelcomePage1 extends StatelessWidget {
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
+                            Icon(Icons.fiber_manual_record_outlined,
+                                color: ConstColor.siyohColor),
                             FadeInUp(
                                 child: Icon(Icons.fiber_manual_record,
                                     color: ConstColor.siyohColor)),
-                            Icon(Icons.fiber_manual_record_outlined,
-                                color: ConstColor.siyohColor),
                             Icon(Icons.fiber_manual_record_outlined,
                                 color: ConstColor.siyohColor)
                           ],
@@ -79,9 +86,7 @@ class WelcomePage1 extends StatelessWidget {
                         backgroundColor: ConstColor.siyohColor,
                         child: Center(
                           child: IconButton(
-                            onPressed: () {
-                              Navigator.pushNamed(context, "/w2");
-                            },
+                            onPressed: () {},
                             icon: Icon(
                               Icons.arrow_forward_ios_outlined,
                               color: ConstColor.whiteColor,
