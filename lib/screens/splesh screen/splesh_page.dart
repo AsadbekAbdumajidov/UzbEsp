@@ -14,21 +14,7 @@ class SpleshPage extends StatelessWidget {
       Navigator.pushNamedAndRemoveUntil(context, '/w1', (route) => false);
     });
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.pushNamed(context, "/home");
-            },
-            child: Text(
-              "O'tkazib yuborish      ",
-              style: TextStyle(color: ConstColor.blackColor.withOpacity(0.6)),
-            ),
-          ),
-        ],
-      ),
+      
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,
