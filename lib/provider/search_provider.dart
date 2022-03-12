@@ -11,8 +11,7 @@ class SearchProvider extends ChangeNotifier {
         order.add(doc[i]["name"]);
       }
     }
+
     notifyListeners();
   }
-
-  
 }

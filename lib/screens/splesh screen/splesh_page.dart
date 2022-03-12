@@ -10,7 +10,7 @@ class SpleshPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    Future.delayed(const Duration(seconds:4), () {
+    Future.delayed(const Duration(seconds:3), () {
       Navigator.pushNamedAndRemoveUntil(context, '/w1', (route) => false);
     });
     return Scaffold(
