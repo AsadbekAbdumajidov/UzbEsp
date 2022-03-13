@@ -49,7 +49,7 @@ class WelcomePage2 extends StatelessWidget {
                     height: he(220),
                   ),
                   MyPadddings.pdOnly(
-                    top: he(40),
+                    top: he(30),
                     bottom: he(14),
                     child: Text(
                       "Ispan tilida muloqot qilishda zarur\n       bo'lgan so'zlar va iboralar",

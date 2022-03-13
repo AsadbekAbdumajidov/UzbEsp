@@ -58,7 +58,7 @@ class WelcomePage1 extends StatelessWidget {
                   Column(
                     children: [
                       MyPadddings.pdOnly(
-                        top: he(60),
+                        top: he(50),
                         bottom: he(20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
