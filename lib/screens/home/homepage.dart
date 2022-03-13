@@ -35,49 +35,52 @@ class _MyHomePageState extends State<MyHomePage> {
         physics: const BouncingScrollPhysics(),
         itemBuilder: ((_, __) {
           return FadeInUp(
-            child: Container(
-              margin:
-                  EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
-              height: he(75),
-              width: wi(343),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 2,
-                    blurRadius: 7,
-                    offset: const Offset(0, 5),
-                  ),
-                ],
-                color: ConstColor.whiteColor,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: MyPadddings.pdSymetric(
-                horizontal: wi(11),
-                child: Row(
-                  children: [
-                    Container(
-                      height: he(54),
-                      width: he(54),
-                      decoration: BoxDecoration(
-                          borderRadius:
-                              const BorderRadius.all(Radius.circular(5)),
-                          color: ConstColor.siyohColor.withOpacity(0.3),
-                          image: DecorationImage(
-                            image: AssetImage(bolimlar[__]["img"]),
-                          )),
-                    ),
-                    MyPadddings.pdOnly(
-                      left: wi(20),
-                      child: Text(
-                        bolimlar[__]["name"],
-                        style: TextStyle(
-                            fontFamily: "balo",
-                            fontSize: he(20),
-                            fontWeight: FontWeight.bold),
-                      ),
+            child: InkWell(
+              onTap: ()=> Navigator.popAndPushNamed(context, "/next",arguments: __),
+              child: Container(
+                margin:
+                    EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
+                height: he(75),
+                width: wi(343),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 2,
+                      blurRadius: 7,
+                      offset: const Offset(0, 5),
                     ),
                   ],
+                  color: ConstColor.whiteColor,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: MyPadddings.pdSymetric(
+                  horizontal: wi(11),
+                  child: Row(
+                    children: [
+                      Container(
+                        height: he(54),
+                        width: he(54),
+                        decoration: BoxDecoration(
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(5)),
+                            color: ConstColor.siyohColor.withOpacity(0.3),
+                            image: DecorationImage(
+                              image: AssetImage(bolimlar[__]["img"]),
+                            )),
+                      ),
+                      MyPadddings.pdOnly(
+                        left: wi(20),
+                        child: Text(
+                          bolimlar[__]["name"],
+                          style: TextStyle(
+                              fontFamily: "balo",
+                              fontSize: he(20),
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

@@ -7,7 +7,8 @@ import 'package:uzesp/core/widgets/home_app_bar/home_app_bar.dart';
 import '../../core/components/size_konfig.dart';
 
 class NextPage extends StatefulWidget {
-  const NextPage({Key? key}) : super(key: key);
+  var index;
+   NextPage({Key? key,this.index}) : super(key: key);
 
   @override
   State<NextPage> createState() => _MyHomePageState();
@@ -32,62 +33,62 @@ class _MyHomePageState extends State<NextPage> {
         physics: const BouncingScrollPhysics(),
         itemBuilder: ((_, __) {
           return FadeInUp(
-            child: Container(
-              margin:
-                  EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
-              height: he(80),
-              width: wi(343),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 2,
-                    blurRadius: 7,
-                    offset: const Offset(0, 5),
-                  ),
-                ],
-                color: ConstColor.whiteColor,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: MyPadddings.pdSymetric(
-                horizontal: wi(11),
+            child:  Container(
+                margin:
+                    EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
+                height: he(80),
+                width: wi(343),
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 2,
+                      blurRadius: 7,
+                      offset: const Offset(0, 5),
+                    ),
+                  ],
+                  color: ConstColor.whiteColor,
+                  borderRadius: BorderRadius.circular(15),
+                ),
                 child: MyPadddings.pdSymetric(
-                  horizontal: wi(20),
-                  vertical: he(5),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Uzbekcha",
-                            style: TextStyle(
-                                fontFamily: "balo",
-                                fontSize: he(20),
-                                fontWeight: FontWeight.bold),
-                          ),
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(Icons.favorite_border,size: 30),
-                          ),
-                        ],
-                      ),
-                      Text(
-                        "Ispancha",
-                        style: TextStyle(
-                          fontFamily: "balo",
-                          fontSize: he(16),
+                  horizontal: wi(11),
+                  child: MyPadddings.pdSymetric(
+                    horizontal: wi(20),
+                    vertical: he(5),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            Text(
+                              bolim[widget.index!][__]["uz"],
+                              style: TextStyle(
+                                  fontFamily: "balo",
+                                  fontSize: he(20),
+                                  fontWeight: FontWeight.bold),
+                            ),
+                            IconButton(
+                              onPressed: () {},
+                              icon: const Icon(Icons.favorite_border, size: 30),
+                            ),
+                          ],
                         ),
-                      ),
-                    ],
+                        Text(
+                          "Ispancha",
+                          style: TextStyle(
+                            fontFamily: "balo",
+                            fontSize: he(16),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),
-            ),
           );
         }),
-        itemCount: bolimlar.length,
+        itemCount: bolim[widget.index].length,
       ),
     );
   }

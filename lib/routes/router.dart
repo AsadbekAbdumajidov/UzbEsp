@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uzesp/screens/biz_haqimizda/biz_haqimizda_page.dart';
 import 'package:uzesp/screens/ispaniya_tarixi/ispaniya_tarixi.dart';
+import 'package:uzesp/screens/next_page/next_page.dart';
 import 'package:uzesp/screens/saqlanganlar/saqlanganlar.dart';
 import 'package:uzesp/screens/search/search.dart';
 
@@ -12,6 +13,7 @@ import '../screens/splesh screen/welcome_3.dart';
 
 class RouteGenerate {
   Route? generate(RouteSettings settings) {
+    final args = settings.arguments;
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(
@@ -45,9 +47,13 @@ class RouteGenerate {
         return MaterialPageRoute(
           builder: (context) => const IspaniyaTarixiPage(),
         );
-        case '/about':
+      case '/about':
         return MaterialPageRoute(
           builder: (context) => const BizHaqimizdaPage(),
+        );
+      case '/next':
+        return MaterialPageRoute(
+          builder: (context) =>  NextPage(index: args),
         );
     }
     return null;
