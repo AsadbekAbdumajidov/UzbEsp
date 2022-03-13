@@ -37,13 +37,13 @@ List akvapark = [
     "esp": "Estoy harto de nadar, vamos al bar a comer un helado"
   },
   {
-    "uz"
-        "Men bu korzinkada cho'milish kiyimlarimni va sochig'imni qoldirsam bo'ladimi?"
+    "uz":
+        "Men bu korzinkada cho'milish kiyimlarimni va sochig'imni qoldirsam bo'ladimi?",
         "esp": "¿Puedo dejar en esta cesta el bañador y la toalla?"
   },
   {
-    "esp"
-            "Men akvaparkka bormoqchi edim u yerda ko'plab suv attraksionlari bor."
+    "uz":
+            "Men akvaparkka bormoqchi edim u yerda ko'plab suv attraksionlari bor.",
             "esp":
         "Quisiera ir al acuaparque, allí hay muchísimas distracciónes acuáticas"
   },
@@ -63,20 +63,20 @@ List akvapark = [
     "esp": "¿Dónde está el montículo más alto?"
   },
   {
-    "uz"
-            "Seans uch soatdan beri davom etayapti. Men och qoldim. Barga boraylik va biror narsa eylik"
+    "uz":
+            "Seans uch soatdan beri davom etayapti. Men och qoldim. Barga boraylik va biror narsa eylik",
             "esp":
         "La sessión dura ya tres horas. Tengo hambre. Vamos al bar, tomaremos un bocado "
   },
   {
-    "uz"
-            "Assalomu alaykum! Iltimos, ikkita qovurilgan kartoshka bilan kolbasa va pivo bering "
+    "uz":
+            "Assalomu alaykum! Iltimos, ikkita qovurilgan kartoshka bilan kolbasa va pivo bering ",
             "esp":
         "¡Buenos día! Por favor, dos porciones de patatas fritas con mortaleda y dos cervezas. "
   },
   {
-    "uz"
-            "Pulni meni braslet nomerimga ezing seans tugagandan keyin tulayman. Rahmat"
+    "uz":
+            "Pulni meni braslet nomerimga ezing seans tugagandan keyin tulayman. Rahmat",
             "esp":
         "El pago a mi número de brazaleta despues de la sesión dónde el administrador. Gracias."
   },
