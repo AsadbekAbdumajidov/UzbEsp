@@ -32,62 +32,71 @@ class _MyHomePageState extends State<SaqlanganlarPage> {
         physics: const BouncingScrollPhysics(),
         itemBuilder: ((_, __) {
           return FadeInUp(
-            child: Container(
-              margin:
-                  EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
-              height: he(80),
-              width: wi(343),
-              decoration: BoxDecoration(
-                boxShadow: [
-                  BoxShadow(
-                    color: Colors.grey.withOpacity(0.5),
-                    spreadRadius: 2,
-                    blurRadius: 7,
-                    offset: const Offset(0, 5),
-                  ),
-                ],
-                color: ConstColor.whiteColor,
-                borderRadius: BorderRadius.circular(15),
-              ),
-              child: MyPadddings.pdSymetric(
-                horizontal: wi(11),
-                child: MyPadddings.pdSymetric(
-                  horizontal: wi(20),
-                  vertical: he(5),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Text(
-                            "Uzbekcha",
-                            style: TextStyle(
-                                fontFamily: "balo",
-                                fontSize: he(20),
-                                fontWeight: FontWeight.bold),
-                          ),
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(Icons.favorite_border,size: 30),
-                          ),
-                        ],
-                      ),
-                      Text(
-                        "Ispancha",
-                        style: TextStyle(
-                          fontFamily: "balo",
-                          fontSize: he(16),
-                        ),
+            child: Stack(
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(
+                      horizontal: wi(20), vertical: he(10)),
+                  decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 7,
+                        offset: const Offset(0, 5),
                       ),
                     ],
+                    color: ConstColor.whiteColor,
+                    borderRadius: BorderRadius.circular(15),
+                  ),
+                  child: MyPadddings.pdSymetric(
+                    horizontal: wi(20),
+                    vertical: he(12),
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          "Uzb",
+                          style: TextStyle(
+                              fontFamily: "balo",
+                              fontSize: he(20),
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Divider(
+                          color: ConstColor.blackColor,
+                        ),
+                        Text(
+                          "Espancha",
+                          style: TextStyle(
+                            fontFamily: "balo",
+                            fontSize: he(16),
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
+                Positioned(
+                  right: wi(30),
+                  top: he(20),
+                  child: CircleAvatar(
+                    backgroundColor: ConstColor.siyohColor.withOpacity(0.2),
+                    child: IconButton(
+                      splashRadius: 1,
+                      onPressed: () {
+                      },
+                      icon: Icon(
+                        Icons.favorite_border_outlined,
+                        color: ConstColor.blackColor,
+                      ),
+                    ),
+                  ),
+                ),
+              ],
             ),
           );
         }),
-        itemCount: bolimlar.length,
+        itemCount: 10,
       ),
     );
   }

@@ -41,9 +41,7 @@ class _SearchPageState extends State<SearchPage> {
         itemBuilder: ((_, __) {
           
           return FadeInUp(
-            child: InkWell(
-              onTap: ()=> Navigator.pushNamed(context, '/next',arguments: __),
-              child: Container(
+            child:  Container(
                 margin:
                     EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
                 height: he(75),
@@ -60,7 +58,10 @@ class _SearchPageState extends State<SearchPage> {
                   color: ConstColor.whiteColor,
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: MyPadddings.pdSymetric(
+                child:InkWell(
+              splashColor: Colors.transparent,
+              onTap: ()=> Navigator.pushNamed(context, '/next',arguments: __),
+              child: MyPadddings.pdSymetric(
                   horizontal: wi(11),
                   child: Row(
                     children: [

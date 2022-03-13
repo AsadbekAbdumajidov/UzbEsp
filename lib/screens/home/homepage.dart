@@ -73,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         left: wi(20),
                         child: Text(
                           bolimlar[__]["name"],
+                          maxLines: 1,
                           style: TextStyle(
                               fontFamily: "balo",
                               fontSize: he(20),

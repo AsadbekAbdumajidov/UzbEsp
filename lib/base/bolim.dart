@@ -188,6 +188,6 @@ List<Map<String, dynamic>> bolimlar = [
   {"name": "Xizmatlar", "img": "assets/png/46.png"},
   {"name": "Xushmuomalalik", "img": "assets/png/47.png"},
   {"name": "Yozuvlar", "img": "assets/png/48.png"},
-  {"name": "Zargarlikda kerakli so'zlar", "img": "assets/png/49.png"},
+  {"name": "Zargarlik uchun so'zlar", "img": "assets/png/49.png"},
   {"name": "Zaruriy malumotlar", "img": "assets/png/50.png"},
 ];
