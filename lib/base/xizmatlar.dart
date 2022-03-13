@@ -34,13 +34,12 @@ List xizmatlar = [
   },
   {
     "uz": "Kecha buyurgan rasmlarni olmoqchiman. Mana meni kvitansiyam",
-    "para":
-        "Quiero recebir las copias que encargué ayer. Aquí está el resguardo"
+    "esp": "Quiero recebir las copias que encargué ayer. Aquí está el resguardo"
   },
   {"uz": "Qancha bo‘ladi?", "esp": "¿Cuánto es?"},
   {
     "uz": "Sizdan rasmlarga to‘g‘ri keladigan ramkalarni olsam bo‘ladimi?",
-    "para": "¿Puedo comprar marcos para mis fotografías de dimensión adecuada?"
+    "esp": "¿Puedo comprar marcos para mis fotografías de dimensión adecuada?"
   },
   {
     "uz": "Har bita ramka qancha turadi?",
@@ -53,11 +52,10 @@ List xizmatlar = [
   {"uz": "Mana bularni olaman", "esp": "Yo me quedo con éstos"},
   {
     "uz":
-        "Sizdan 200 ta rasm sig‘adigan albom va plenkalar uchun quti olmoqchiman"
-  },
-  {
-    "para":
+        "Sizdan 200 ta rasm sig‘adigan albom va plenkalar uchun quti olmoqchiman",
+    "esp":
         "Quiero comprar un álbum para doscientas fotos y un bloque para negativos"
   },
+  
   {"uz": "Qancha to‘layman? Rahmat", "esp": "¿Cuánto le debo? Gracias"},
 ];

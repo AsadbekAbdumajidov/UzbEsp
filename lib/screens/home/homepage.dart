@@ -68,14 +68,15 @@ class _MyHomePageState extends State<MyHomePage> {
                           )),
                     ),
                     MyPadddings.pdOnly(
-                        left: wi(20),
-                        child: Text(
-                          bolimlar[__]["name"],
-                          style: TextStyle(
-                              fontFamily: "balo",
-                              fontSize: he(20),
-                              fontWeight: FontWeight.bold),
-                        ))
+                      left: wi(20),
+                      child: Text(
+                        bolimlar[__]["name"],
+                        style: TextStyle(
+                            fontFamily: "balo",
+                            fontSize: he(20),
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
                   ],
                 ),
               ),

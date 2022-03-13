@@ -1,4 +1,4 @@
-List kerakli = [
+List kerakli9 = [
   {"uz": "attashe-keys", "esp": "portafolio"},
   {"uz": "chipta", "esp": "billete"},
   {"uz": "-bumajnik", "esp": "cartera"},
