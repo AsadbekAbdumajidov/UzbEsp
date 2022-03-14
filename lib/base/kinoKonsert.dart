@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List kinoKonsert = [
   {"uz": "Kinoga borishni hohlayman", "esp": "Quiero ir al cine"},
   {

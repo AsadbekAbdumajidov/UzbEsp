@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List qimmatBahoBuyumlar = [
   {
     "uz": "Yuviler magazini kaerda joylashgan?",

@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List diqaqatgaSJ = [
   {
     "uz": "Menga yaxshi gid tavsiya qila olasizmi?",

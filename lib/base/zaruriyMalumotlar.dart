@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 List zaruriyMalumotlar = [
   {"uz": "Menga ... kerak", "esp": "Necesito...."},
   {"uz": "Men xohlardimki ...", "esp": "Yo quiería...."},

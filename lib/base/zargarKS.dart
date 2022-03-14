@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 List zargarlikKerakliSozlar = [
   {"uz": "aqiq", "esp": "ágata"},
   {"uz": "safsar", "esp": "amatista"},

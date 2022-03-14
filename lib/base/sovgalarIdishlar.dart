@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 List sovgalarIdishlar = [
   {"uz": "Men sovg‘alar sotib olmoqchiman", "esp": "quiero comprar regalos"},
   {

@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List oyoqKiyim = [
   {"uz": "men....kiyib ko‘rmoqchiman", "esp": "quisiera probarme..."},
   {"uz": "-tuflini", "esp": "-unos zapatos"},

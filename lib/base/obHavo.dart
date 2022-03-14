@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List obHavo = [
   {"uz": "Sizda iqlim qanaqa?", "esp": "¿Qué clima tienen?"},
   {"uz": "Bizda iqlim ...", "esp": "Tenemos un clima ..."},

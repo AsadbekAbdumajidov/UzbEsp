@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List soatTuzatih = [
   {
     "uz": "Yaqin joydagi soa tuzatish ustaxonasi qayerda?",

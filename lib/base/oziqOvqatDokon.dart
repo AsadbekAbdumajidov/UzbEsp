@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List oziqOvqatDokon = [
   {"uz": "Iltimos menga…..tortib bering", "esp": "Por favor…"},
   {

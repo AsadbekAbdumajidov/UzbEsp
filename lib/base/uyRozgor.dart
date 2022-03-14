@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 List uyRozgor = [
   {
     "uz": "Uy ro'zg'or buyumlarini tuzatadigan ustaxona qayerda?",

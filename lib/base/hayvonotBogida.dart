@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List hayvonotBogida = [
   {
     "uz": "Shahringizda hayvonot bog‘i bormi?",

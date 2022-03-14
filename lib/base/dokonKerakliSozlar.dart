@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List dokonKerakliSozlar = [
   {"uz": "o‘rik", "esp": "albaricoque"},
   {"uz": "avokado", "esp": "aguacate"},

@@ -1,3 +1,5 @@
+// ignore_for_file: file_names
+
 List uyTexnikasi = [
   {
     "uz": "Menga mana bu suratga oladigan kamerani ko‘rsatib yuboring",

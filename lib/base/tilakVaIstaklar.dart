@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List tilakVaIstaklar = [
   {"uz": "Sizni....bilan tabriklayman", "esp": "Le felecito con motivo..."},
   {"uz": "-tug‘ilgan kuningiz", "esp": "-de su cumpleaños"},

@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 List boshVaqt = [
   {"uz": "Siz nimaga qiziqasiz?", "esp": "¿A qué es usted aficionado?"},
   {
