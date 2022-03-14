@@ -27,7 +27,7 @@ class WelcomePage3 extends StatelessWidget {
           actions: [
             TextButton(
               onPressed: () {
-                Hive.box("myBoolean").putAt(0, true);
+                Hive.box("bool").putAt(0, true);
                 Navigator.pushNamedAndRemoveUntil(
                     context, "/home", (route) => false);
               },
@@ -91,7 +91,7 @@ class WelcomePage3 extends StatelessWidget {
                         child: Center(
                           child: IconButton(
                             onPressed: () {
-                              Hive.box("myBoolean").putAt(0, true);
+                              Hive.box("bool").putAt(0, true);
                               Navigator.pushNamedAndRemoveUntil(
                                   context, "/home", (route) => false);
                             },

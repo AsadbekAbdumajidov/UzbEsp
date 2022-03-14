@@ -7,8 +7,8 @@ import 'package:timezone/data/latest.dart' as tz;
 
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  tz.initializeTimeZones();
-  await Hive.openBox("myBoolean");
+  await Hive.initFlutter();
+  await Hive.openBox("bool");
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (_) => SearchProvider()),

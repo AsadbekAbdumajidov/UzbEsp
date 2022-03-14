@@ -14,8 +14,8 @@ class SpleshPage extends StatefulWidget {
 class _SpleshPageState extends State<SpleshPage> {
   @override
   void initState() {
-    if (Hive.box("myBoolean").isEmpty) {
-      Hive.box("myBoolean").put(0, false);
+    if (Hive.box("bool").isEmpty) {
+      Hive.box("bool").put(0, false);
     }
     super.initState();
   }
@@ -24,7 +24,7 @@ class _SpleshPageState extends State<SpleshPage> {
   Widget build(BuildContext context) {
     SizeConfig().init(context);
     Future.delayed(const Duration(seconds: 3), () {
-      Hive.box("myBoolean").values.toList()[0] == false
+      Hive.box("bool").values.toList()[0] == false
           ? Navigator.pushNamedAndRemoveUntil(context, '/w1', (route) => false)
           : Navigator.pushNamedAndRemoveUntil(
               context, '/home', (route) => false);

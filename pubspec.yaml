@@ -41,6 +41,8 @@ dependencies:
   timezone: ^0.8.0
   
 dev_dependencies:
+  hive_generator: 
+  build_runner: 
   flutter_test:
     sdk: flutter
 
