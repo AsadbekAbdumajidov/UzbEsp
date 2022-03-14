@@ -22,7 +22,7 @@ class HomeAppBar {
   });
   getBar(context) {
     return AppBar(
-      elevation: 1,
+      elevation: 2,
       centerTitle: true,
       automaticallyImplyLeading: false,
       backgroundColor: ConstColor.siyohColor,
