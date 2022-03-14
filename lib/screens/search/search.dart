@@ -20,6 +20,7 @@ class _SearchPageState extends State<SearchPage> {
   TextEditingController bolim = TextEditingController();
   @override
   Widget build(BuildContext context) {
+    int son = 0;
     var order = context.watch<SearchProvider>().order.toList();
     return Scaffold(
       appBar: AppBar(
@@ -39,29 +40,37 @@ class _SearchPageState extends State<SearchPage> {
         padding: EdgeInsets.symmetric(vertical: he(10)),
         physics: const BouncingScrollPhysics(),
         itemBuilder: ((_, __) {
-          
           return FadeInUp(
-            child:  Container(
-                margin:
-                    EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
-                height: he(75),
-                width: wi(343),
-                decoration: BoxDecoration(
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5),
-                      spreadRadius: 2,
-                      blurRadius: 7,
-                      offset: const Offset(0, 5),
-                    ),
-                  ],
-                  color: ConstColor.whiteColor,
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child:InkWell(
-              splashColor: Colors.transparent,
-              onTap: ()=> Navigator.pushNamed(context, '/next',arguments: __),
-              child: MyPadddings.pdSymetric(
+            child: Container(
+              margin:
+                  EdgeInsets.symmetric(horizontal: wi(20), vertical: he(10)),
+              height: he(75),
+              width: wi(343),
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey.withOpacity(0.5),
+                    spreadRadius: 2,
+                    blurRadius: 7,
+                    offset: const Offset(0, 5),
+                  ),
+                ],
+                color: ConstColor.whiteColor,
+                borderRadius: BorderRadius.circular(15),
+              ),
+              child: InkWell(
+                splashColor: Colors.transparent,
+                onTap: () {
+                  
+                  for (int i = 0; i < bolimlar.length; i++) {
+                    if (order[__] == bolimlar[i]["name"]) {
+                      son = i;
+
+                      Navigator.pushNamed(context, "/next", arguments: son);
+                    }
+                  }
+                },
+                child: MyPadddings.pdSymetric(
                   horizontal: wi(11),
                   child: Row(
                     children: [
@@ -69,10 +78,11 @@ class _SearchPageState extends State<SearchPage> {
                         height: he(54),
                         width: he(54),
                         decoration: BoxDecoration(
-                            borderRadius:
-                                const BorderRadius.all(Radius.circular(5)),
-                            color: ConstColor.siyohColor.withOpacity(0.3),
-                           ),
+                          borderRadius:
+                              const BorderRadius.all(Radius.circular(5)),
+                          color: ConstColor.siyohColor.withOpacity(0.3),
+                          image: DecorationImage(image: AssetImage(bolimlar[__]["img"]))
+                        ),
                       ),
                       MyPadddings.pdOnly(
                         left: wi(20),
