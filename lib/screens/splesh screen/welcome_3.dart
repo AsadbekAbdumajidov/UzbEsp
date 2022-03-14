@@ -1,5 +1,6 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:uzesp/core/components/size_konfig.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
 
@@ -26,7 +27,9 @@ class WelcomePage3 extends StatelessWidget {
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, "/home");
+                Hive.box("myBoolean").putAt(0, true);
+                Navigator.pushNamedAndRemoveUntil(
+                    context, "/home", (route) => false);
               },
               child: Text(
                 "O'tkazib yuborish   ",
@@ -74,9 +77,9 @@ class WelcomePage3 extends StatelessWidget {
                           children: [
                             Icon(Icons.fiber_manual_record_outlined,
                                 color: ConstColor.siyohColor),
-                            
                             Icon(Icons.fiber_manual_record_outlined,
-                                color: ConstColor.siyohColor),FadeInUp(
+                                color: ConstColor.siyohColor),
+                            FadeInUp(
                                 child: Icon(Icons.fiber_manual_record,
                                     color: ConstColor.siyohColor)),
                           ],
@@ -87,7 +90,11 @@ class WelcomePage3 extends StatelessWidget {
                         backgroundColor: ConstColor.siyohColor,
                         child: Center(
                           child: IconButton(
-                            onPressed: () {Navigator.pushNamed(context, "/home");},
+                            onPressed: () {
+                              Hive.box("myBoolean").putAt(0, true);
+                              Navigator.pushNamedAndRemoveUntil(
+                                  context, "/home", (route) => false);
+                            },
                             icon: Icon(
                               Icons.arrow_forward_ios_outlined,
                               color: ConstColor.whiteColor,

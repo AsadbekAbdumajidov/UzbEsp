@@ -1,20 +1,35 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
 import 'package:uzesp/core/components/size_konfig.dart';
-import 'package:uzesp/core/constants/const_color.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
 
-class SpleshPage extends StatelessWidget {
+class SpleshPage extends StatefulWidget {
   const SpleshPage({Key? key}) : super(key: key);
+
+  @override
+  State<SpleshPage> createState() => _SpleshPageState();
+}
+
+class _SpleshPageState extends State<SpleshPage> {
+  @override
+  void initState() {
+    if (Hive.box("myBoolean").isEmpty) {
+      Hive.box("myBoolean").put(0, false);
+    }
+    super.initState();
+  }
 
   @override
   Widget build(BuildContext context) {
     SizeConfig().init(context);
-    Future.delayed(const Duration(seconds:3), () {
-      Navigator.pushNamedAndRemoveUntil(context, '/w1', (route) => false);
+    Future.delayed(const Duration(seconds: 3), () {
+      Hive.box("myBoolean").values.toList()[0] == false
+          ? Navigator.pushNamedAndRemoveUntil(context, '/w1', (route) => false)
+          : Navigator.pushNamedAndRemoveUntil(
+              context, '/home', (route) => false);
     });
     return Scaffold(
-      
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.stretch,

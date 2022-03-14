@@ -80,7 +80,7 @@ class _SearchPageState extends State<SearchPage> {
                           order[__],
                           style: TextStyle(
                               fontFamily: "balo",
-                              fontSize: he(20),
+                              fontSize: he(18),
                               fontWeight: FontWeight.bold),
                         ),
                       ),

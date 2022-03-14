@@ -61,6 +61,8 @@ import 'package:uzesp/base/yozuvlar.dart';
 import 'package:uzesp/base/zargarKS.dart';
 import 'package:uzesp/base/zaruriyMalumotlar.dart';
 
+
+
 List bolim = [
   afsuslanish,
   akvapark,

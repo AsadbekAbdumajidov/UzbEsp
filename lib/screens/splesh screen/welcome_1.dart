@@ -1,5 +1,7 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:uzesp/base/bolim.dart';
 import 'package:uzesp/core/components/size_konfig.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
 import '../../core/constants/const_color.dart';
@@ -17,9 +19,12 @@ class WelcomePage1 extends StatelessWidget {
           actions: [
             TextButton(
               onPressed: () {
-                Navigator.pushNamed(context, "/home");
+                Hive.box("myBoolean").putAt(0, true);
+                Navigator.pushNamedAndRemoveUntil(
+                    context, "/home", (route) => false);
               },
               child: Text(
+
                 "O'tkazib yuborish   ",
                 style: TextStyle(color: ConstColor.blackColor.withOpacity(0.6)),
               ),

@@ -2,8 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:uzesp/provider/search_provider.dart';
 import 'package:uzesp/routes/router.dart';
+import 'package:hive_flutter/hive_flutter.dart';
+import 'package:timezone/data/latest.dart' as tz;
 
-void main() async {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  tz.initializeTimeZones();
+  await Hive.openBox("myBoolean");
   runApp(MultiProvider(
     providers: [
       ChangeNotifierProvider(create: (_) => SearchProvider()),

@@ -76,7 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           maxLines: 1,
                           style: TextStyle(
                               fontFamily: "balo",
-                              fontSize: he(20),
+                              fontSize: he(18),
                               fontWeight: FontWeight.bold),
                         ),
                       ),
