@@ -50,22 +50,7 @@ class DrawerComp extends StatelessWidget {
                       child: Image.asset("assets/img/splesh_foto.png"),
                     ),
                   ),
-                  Card(
-                    color: ConstColor.whiteColor,
-                    elevation: 10,
-                    child: ListTile(
-                      onTap: () {
-                        Navigator.pushNamed(context, "/fav");
-                      },
-                      leading: Icon(Icons.favorite_border,
-                          color: ConstColor.blackColor, size: 27),
-                      title: Text(
-                        "Saqlanganlar",
-                        style: TextStyle(
-                            color: ConstColor.blackColor, fontSize: 16),
-                      ),
-                    ),
-                  ),
+                 
                   Card(
                     color: ConstColor.whiteColor,
                     elevation: 10,

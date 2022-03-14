@@ -21,6 +21,7 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     int son = 0;
+    var img = context.watch<SearchProvider>().img.toList();
     var order = context.watch<SearchProvider>().order.toList();
     return Scaffold(
       appBar: AppBar(
@@ -61,7 +62,6 @@ class _SearchPageState extends State<SearchPage> {
               child: InkWell(
                 splashColor: Colors.transparent,
                 onTap: () {
-                  
                   for (int i = 0; i < bolimlar.length; i++) {
                     if (order[__] == bolimlar[i]["name"]) {
                       son = i;
@@ -81,7 +81,9 @@ class _SearchPageState extends State<SearchPage> {
                           borderRadius:
                               const BorderRadius.all(Radius.circular(5)),
                           color: ConstColor.siyohColor.withOpacity(0.3),
-                          image: DecorationImage(image: AssetImage(bolimlar[__]["img"]))
+                          image: DecorationImage(
+                            image: AssetImage(img[__]),
+                          ),
                         ),
                       ),
                       MyPadddings.pdOnly(
