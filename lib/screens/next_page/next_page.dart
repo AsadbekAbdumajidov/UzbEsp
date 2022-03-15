@@ -6,6 +6,7 @@ import 'package:uzesp/base/bolim.dart';
 import 'package:uzesp/core/constants/const_color.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
 import 'package:uzesp/core/widgets/home_app_bar/home_app_bar.dart';
+import 'package:uzesp/services/share_service.dart';
 import '../../core/components/size_konfig.dart';
 
 class NextPage extends StatefulWidget {
@@ -29,6 +30,7 @@ class _MyHomePageState extends State<NextPage> {
         righ2tIcon: Icon(Icons.search, color: ConstColor.whiteColor),
         right2Ontap: () => Navigator.pushNamed(context, "/search"),
         leftOntap: () => Navigator.pushNamed(context, "/home"),
+        rightOntap: ()=> Serviceshare.share()
       ).getBar(context),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: he(10)),

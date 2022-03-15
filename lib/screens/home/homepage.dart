@@ -5,6 +5,7 @@ import 'package:uzesp/core/components/drawer.dart';
 import 'package:uzesp/core/constants/const_color.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
 import 'package:uzesp/core/widgets/home_app_bar/home_app_bar.dart';
+import 'package:uzesp/services/share_service.dart';
 import '../../core/components/size_konfig.dart';
 
 class MyHomePage extends StatefulWidget {
@@ -29,6 +30,7 @@ class _MyHomePageState extends State<MyHomePage> {
         righ2tIcon: Icon(Icons.search, color: ConstColor.whiteColor),
         leftOntap: () => _scaffoldKey.currentState!.openDrawer(),
         right2Ontap: () => Navigator.pushNamed(context, "/search"),
+        rightOntap: ()=> Serviceshare.share()
       ).getBar(context),
       body: ListView.builder(
         padding: EdgeInsets.symmetric(vertical: he(10)),

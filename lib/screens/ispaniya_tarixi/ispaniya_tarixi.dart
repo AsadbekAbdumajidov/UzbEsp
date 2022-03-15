@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uzesp/core/components/size_konfig.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
+import 'package:uzesp/services/share_service.dart';
 
 import '../../core/constants/const_color.dart';
 import '../../core/widgets/home_app_bar/home_app_bar.dart';
@@ -19,6 +20,7 @@ class IspaniyaTarixiPage extends StatelessWidget {
         righ2tIcon: Icon(Icons.search, color: ConstColor.whiteColor),
         leftOntap: () => Navigator.pushNamed(context, "/home"),
         right2Ontap: () => Navigator.pushNamed(context, "/search"),
+        rightOntap: ()=> Serviceshare.share()
       ).getBar(context),
       body: MyPadddings.pdSymetric(
         horizontal: wi(20),
