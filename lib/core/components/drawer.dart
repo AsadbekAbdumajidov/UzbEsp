@@ -57,6 +57,22 @@ class DrawerComp extends StatelessWidget {
                     elevation: 10,
                     child: ListTile(
                       onTap: () {
+                        Navigator.pop(context);
+                      },
+                      leading: Icon(Icons.home_max_rounded,
+                          color: ConstColor.blackColor, size: 27),
+                      title: Text(
+                        "Asosiy",
+                        style: TextStyle(
+                            color: ConstColor.blackColor, fontSize: 16),
+                      ),
+                    ),
+                  ),
+                  Card(
+                    color: ConstColor.whiteColor,
+                    elevation: 10,
+                    child: ListTile(
+                      onTap: () {
                         Navigator.pushNamed(context, "/tarix");
                       },
                       leading: Icon(Icons.history,
@@ -89,7 +105,6 @@ class DrawerComp extends StatelessWidget {
                     elevation: 10,
                     child: ListTile(
                       onTap: () {
-                        
                         ServiceSnackBar.showMyDialog(context);
                       },
                       leading: Icon(Icons.output_sharp,
