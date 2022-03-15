@@ -1,8 +1,10 @@
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_exit_app/flutter_exit_app.dart';
 import 'package:uzesp/core/components/size_konfig.dart';
 import 'package:uzesp/core/constants/const_color.dart';
 import 'package:uzesp/core/constants/padding/padding_comp.dart';
+import 'package:uzesp/services/snack_bar.dart';
 
 class DrawerComp extends StatelessWidget {
   const DrawerComp({Key? key}) : super(key: key);
@@ -50,12 +52,13 @@ class DrawerComp extends StatelessWidget {
                       child: Image.asset("assets/img/splesh_foto.png"),
                     ),
                   ),
-                 
                   Card(
                     color: ConstColor.whiteColor,
                     elevation: 10,
                     child: ListTile(
-                      onTap: () {Navigator.pushNamed(context, "/tarix");},
+                      onTap: () {
+                        Navigator.pushNamed(context, "/tarix");
+                      },
                       leading: Icon(Icons.history,
                           color: ConstColor.blackColor, size: 27),
                       title: Text(
@@ -69,7 +72,9 @@ class DrawerComp extends StatelessWidget {
                     color: ConstColor.whiteColor,
                     elevation: 10,
                     child: ListTile(
-                      onTap: () {Navigator.pushNamed(context, "/about");},
+                      onTap: () {
+                        Navigator.pushNamed(context, "/about");
+                      },
                       leading: Icon(Icons.warning_amber_outlined,
                           color: ConstColor.blackColor, size: 27),
                       title: Text(
@@ -83,7 +88,10 @@ class DrawerComp extends StatelessWidget {
                     color: ConstColor.whiteColor,
                     elevation: 10,
                     child: ListTile(
-                      onTap: () {},
+                      onTap: () {
+                        
+                        ServiceSnackBar.showMyDialog(context);
+                      },
                       leading: Icon(Icons.output_sharp,
                           color: ConstColor.blackColor, size: 27),
                       title: Text(
