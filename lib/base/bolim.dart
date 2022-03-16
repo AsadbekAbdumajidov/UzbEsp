@@ -132,7 +132,7 @@ List<Map<String, dynamic>> bolimlar = [
   {"name": "Afsuslanish", "img": "assets/png/1.png"},
   {"name": "Akvaparkda", "img": "assets/png/2.png"},
   {"name": "Attorlik", "img": "assets/png/3.png"},
-  {"name": "Avtobusda", "img": "assets/png/4.png"},
+  {"name": "Avtobusda", "img": "assets/png/43.png"},
   {"name": "Bank", "img": "assets/png/47.png"},
   {"name": "Bojhona", "img": "assets/png/6.png"},
   {"name": "Bo'sh vaqt", "img": "assets/png/7.png"},
