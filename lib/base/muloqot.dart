@@ -1,20 +1,25 @@
 List muloqot = [
-  {"Xayrli tong (soat 12 gacha )": "¡Buenos dias!"},
-  {"Xayrli kun (soat 12 dan 18 gacha)": "¡Buenas tardes!"},
-  {"Xayrli kech (soat 18 dan 24 gacha)": "¡Buenas noches!"},
-  {"Salom": "Hola!"},
-  {"Xush kelibsiz!": "¡Bienvenido/a(s)!"},
+
+  {"uz": "Xayrli tong (soat 12 gacha )",
+   "esp": "¡Buenos dias!"},
+  {"uz": "Xayrli kun (soat 12 dan 18 gacha)",
+   "esp": "¡Buenas tardes!"},
+  {"uz": "Xayrli kech (soat 18 dan 24 gacha)", 
+  "esp": "¡Buenas noches!"},
+  {"uz": "Salom",
+   "esp": "Hola!"},
+  {"uz": "Xush kelibsiz!", 
+  "esp": "¡Bienvenido/a(s)!"},
   {
-    "Sizni ko‘rganimdan xursandman!":
-        "¡Me alegro de verle! ¡Encantada de verle!"
+    "uz": "Sizni ko‘rganimdan xursandman!",
+    "esp": "¡Me alegro de verle! ¡Encantada de verle!"
   },
   {
-    "Mehmonxonada nechchi kun bo‘lishni rejalashtirayapsiz?":
-        "Mehmonxonada nechchi kun bo‘lishni rejalashtirayapsiz?"
+    "uz": "Mehmonxonada nechchi kun bo‘lishni rejalashtirayapsiz?",
+    "esp": "Mehmonxonada nechchi kun bo‘lishni rejalashtirayapsiz?"
   },
   {
-    "Mehmonxonada nechchi kun bo‘lishni rejalashtirayapsiz?":
-        "Mehmonxonada nechchi kun bo‘lishni rejalashtirayapsiz?"
+    "uz": "Mehmonxonada nechchi kun bo‘lishni rejalashtirayapsiz?",
+    "esp": "Mehmonxonada nechchi kun bo‘lishni rejalashtirayapsiz?"
   }
 ];
-
