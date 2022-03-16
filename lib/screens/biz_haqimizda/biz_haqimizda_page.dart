@@ -235,7 +235,7 @@ class BizHaqimizdaPage extends StatelessWidget {
                           ),
                           IconButton(
                             onPressed: () {
-                              ServiceUrl.launchURL("https://t.me/Otam03");
+                              ServiceUrl.launchURL("https://www.instagram.com/invites/contact/?i=vtkumsj4wkfk&utm_content=khqabw1");
                             },
                             icon: SvgPicture.asset("assets/img/insta_logo.svg",
                                 height: he(22), color: ConstColor.redColor),
