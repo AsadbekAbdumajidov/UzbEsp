@@ -8,94 +8,55 @@
  </br>
  ### Menyu sahifasi
 
- <img src="https://user-images.githubusercontent.com/95922380/157986687-a230afa6-c7ae-40b9-adaa-3e226cb199ea.png"
+ <img src="https://user-images.githubusercontent.com/95922380/178912058-9467b910-1a4e-48a4-8a28-e483903f0e08.png"
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200" />
   </br>
  </br>
- ### Pop ap menyu
+ ### Drawer menyu
 
-  <img src="https://user-images.githubusercontent.com/95922380/157986854-facba36f-3fc9-4d39-bb69-58474f7c664d.png"
+  <img src="https://user-images.githubusercontent.com/95922380/178912166-46d8709e-4cdc-4e14-bc44-bd7615ba2018.png"
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200" />
 
 </br>
 </br>
  
-### Namoz vaqtlari sahifasi
+### Ispan tarixi sahifasi
 
- <img src="https://user-images.githubusercontent.com/95922380/157987052-6ff905aa-c553-404f-a4e1-7421e45e893e.png"
+ <img src="https://user-images.githubusercontent.com/95922380/178912276-44bd4ad6-b0b9-42f1-bd6e-dac4c52963ed.png"
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200" />
       
 </br>
 </br>
   
-### Qibla aniqlovchi sahifa
-<img src="https://user-images.githubusercontent.com/95922380/157987095-fc505ede-c384-4695-98eb-32734300168f.png"
+### Biz haqimizda sahifasi
+<img src="https://user-images.githubusercontent.com/95922380/178912400-5f1d7434-78f9-4358-a636-51265633cc18.png"
+     alt="Onboarding page"
+     style="float: left; margin-right: 10px;" width="200" />
+     
+ </br>
+ </br>
+### Qidiruv sahifasi
+
+ <img src="https://user-images.githubusercontent.com/95922380/178912400-5f1d7434-78f9-4358-a636-51265633cc18.png"
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200" />
   </br>
  </br>
-### Taqvim sahifasi
+### So'zlar sahifasi
 
- <img src="https://user-images.githubusercontent.com/95922380/157987431-2b9c1cb4-b649-4806-b557-b9aa9ea01f93.png"
+ <img src="https://user-images.githubusercontent.com/95922380/178912691-67ad8367-3448-49fb-999c-3edb762bfc73.png"
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200" />
   </br>
  </br>
-### Tasbeh sahifasi
+### chiqish sahifasi
 
- <img src="https://user-images.githubusercontent.com/95922380/157987478-cacb449b-fd83-4964-88d1-04fc5077d116.png"
-     alt="Onboarding page"
-     style="float: left; margin-right: 10px;" width="200" />
-  </br>
- </br>
-### Namoz oqishni orgatuvchi sahifa
-
- <img src="https://user-images.githubusercontent.com/95922380/157987575-d84707d5-26a5-4af2-abcc-cc1f6795309c.png"
+ <img src="https://user-images.githubusercontent.com/95922380/178912890-98484583-da98-41c6-9d60-d83be0636a90.png"
      alt="Onboarding page"
      style="float: left; margin-right: 10px;" width="200" />
  </br>
  </br>
-### Tahorat olishni orgatuvchi sahifa
- 
-  <img src="https://user-images.githubusercontent.com/95922380/157987632-7a8e3a78-00be-467b-98a3-fbcacd2b8706.png"
-     alt="Onboarding page"
-     style="float: left; margin-right: 10px;" width="200" />
- </br>
- </br>
- ### 6 diniy Kalima sahifasi
-
- <img src="https://user-images.githubusercontent.com/95922380/157987705-689800ed-11d0-4664-a1d0-08fb2f19c88e.png"
-     alt="Onboarding page"
-     style="float: left; margin-right: 10px;" width="200" />
-  </br>
- </br>
-### 101 Hadis sahifasi
-
-  <img src="https://user-images.githubusercontent.com/95922380/157987833-09d19cda-e94f-4923-9e38-3fb95a00387e.png"
-     alt="Onboarding page"
-     style="float: left; margin-right: 10px;" width="200" />
- </br>
- </br>
- ### Allohning 99 ismlari sahifasi
-
-  <img src="https://user-images.githubusercontent.com/95922380/157987893-82fda997-66c6-4c52-a4bb-1a44a080b225.png"
-     alt="Onboarding page"
-     style="float: left; margin-right: 10px;" width="200" />
-  </br>
- </br>
-### Duolar sahifasi
-
-  <img src="https://user-images.githubusercontent.com/95922380/157987971-79239ad0-af60-4418-829b-922ec7ee8264.png"
-     alt="Onboarding page"
-     style="float: left; margin-right: 10px;" width="200" />
- </br>
- </br>
- ### Biz haqimizda sahifa
-
-  <img src="https://user-images.githubusercontent.com/95922380/157988012-6d9ce2b5-77fb-48e1-953f-60c1ff6104d3.png"
-     alt="Onboarding page"
-     style="float: left; margin-right: 10px;" width="200" />
 
