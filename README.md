@@ -38,6 +38,7 @@
      
  </br>
  </br>
+ 
 ### Qidiruv sahifasi
 
  <img src="https://user-images.githubusercontent.com/95922380/178912400-5f1d7434-78f9-4358-a636-51265633cc18.png"
@@ -52,7 +53,8 @@
      style="float: left; margin-right: 10px;" width="200" />
   </br>
  </br>
-### chiqish sahifasi
+ 
+### Chiqish sahifasi
 
  <img src="https://user-images.githubusercontent.com/95922380/178912890-98484583-da98-41c6-9d60-d83be0636a90.png"
      alt="Onboarding page"
